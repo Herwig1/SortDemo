@@ -1,0 +1,105 @@
+englisch
+Version
+OK
+Yes
+No
+Cancel
+start animation
+pause
+continue
+stop animation
+Close
+Sort-Method
+Choose art od list
+repaint
+clear graphic
+delay
+// SortUnitDefinitionen
+inactive
+sorted
+compare
+move
+notice
+insert 
+// SortUnitMain
+Sorting Demo
+Sort on linear lists
+Demo of sorting procedures
+Time measurements
+Number of comparisons
+Number of displacements
+"Costs“ of comparisons and displacments
+Sorting of bars
+Sorting on tapes
+Demo to some sorting algorithms
+Comparison of execution times
+Determine the number of shifts
+Determine the number of comparisons
+Determine the "cost"
+Example of a band sorting
+Create a number field
+List type
+normal
+without double
+inverse sorted
+field size
+color selection
+close animations
+exit program 
+// SortUnitVerschiebungen
+depending on the length of the list (right-click: compensation function)
+Draw curve?
+Compensation curve for
+insert theoretical function
+No curve found
+Compare selected procedures
+Number of passages
+view each
+max. list length 
+Cost Distribution 
+// SortUnitTimes
+Sorting times (microseconds) as a function of the list length (right-hand click: compensation function)
+Pause after time measurement (to allow the processor to recover)
+// SortUnitBand
+Demo for the sorting on tapes
+Splits the number field in 2 bands
+max. Band length:
+heap size:
+input
+output
+Run
+// SortUnitLineDemo
+Demo of the sorting process with graphical representation
+Create a new list
+// SortUnitListArtDlg
+normal random list
+random list without duplications
+sorted list
+inverse sorted list 
+// Sort number fieldDlg
+define integerr field
+load list
+save list
+// SortUnitSelectionDlg
+Select sorting procedure
+Mark all
+Delete the mark
+// SortUnitFarCode_Demo
+Colors
+Take
+// SortUnitCostDlg
+Cost factor
+comparisons
+shifts 
+//FunktionEditorDlg
+show error
+edit function
+//SimpFunktion
+( expected
+) expected
+operator expected
+( or number or n expected
+input not allowed
+number too big
+no formula given
+formula not interpreted

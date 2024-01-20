@@ -1,0 +1,105 @@
+object KostenDlg: TKostenDlg
+  Left = 381
+  Height = 159
+  Top = 155
+  Width = 308
+  BorderStyle = bsDialog
+  Caption = 'Kostenfaktor festlegen'
+  ClientHeight = 159
+  ClientWidth = 308
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.0.4'
+  object Bevel1: TBevel
+    Left = 8
+    Height = 114
+    Top = 8
+    Width = 292
+    Shape = bsFrame
+  end
+  object LabelVgl: TLabel
+    Left = 26
+    Height = 20
+    Top = 32
+    Width = 116
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Vergleiche'
+  end
+  object Label1: TLabel
+    Left = 147
+    Height = 17
+    Top = 32
+    Width = 5
+    Caption = ':'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LabelCerschieb: TLabel
+    Left = 160
+    Height = 20
+    Top = 32
+    Width = 116
+    AutoSize = False
+    Caption = 'Verschiebungen'
+  end
+  object Label4: TLabel
+    Left = 147
+    Height = 17
+    Top = 76
+    Width = 5
+    Caption = ':'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object EditVgl: TEdit
+    Left = 102
+    Height = 29
+    Top = 70
+    Width = 33
+    AutoSelect = False
+    Enabled = False
+    TabOrder = 0
+    Text = '   1'
+  end
+  object EditVerschieb: TEdit
+    Left = 166
+    Height = 29
+    Top = 70
+    Width = 78
+    OnChange = EditVerschiebChange
+    TabOrder = 1
+    Text = '2'
+  end
+  object BitBtnOk: TBitBtn
+    Left = 168
+    Height = 25
+    Top = 127
+    Width = 124
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object BitBtnCancel: TBitBtn
+    Left = 16
+    Height = 25
+    Top = 127
+    Width = 128
+    Cancel = True
+    Caption = 'Abbrechen'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+end

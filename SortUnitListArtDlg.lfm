@@ -1,0 +1,58 @@
+object ListArtDlg: TListArtDlg
+  Left = 227
+  Height = 184
+  Top = 108
+  Width = 397
+  BorderStyle = bsDialog
+  Caption = 'Auswahl der Listenart'
+  ClientHeight = 184
+  ClientWidth = 397
+  Color = clBtnFace
+  ParentFont = True
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.0.4'
+  object RadioGroup1: TRadioGroup
+    Left = 20
+    Height = 157
+    Top = 13
+    Width = 244
+    AutoFill = True
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 155
+    ClientWidth = 242
+    Items.Strings = (
+      'normale Zufallsliste'
+      'Zufallsliste ohne Dopplungen'
+      'sortierte Liste'
+      'umgekehrt sortierte Liste'
+    )
+    TabOrder = 0
+  end
+  object BitBtnOk: TBitBtn
+    Left = 280
+    Height = 25
+    Top = 13
+    Width = 100
+    Caption = '&Ok'
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object BitBtnCancel: TBitBtn
+    Left = 280
+    Height = 25
+    Top = 44
+    Width = 100
+    Caption = 'Abbrechen'
+    Default = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
+  end
+end

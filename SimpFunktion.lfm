@@ -1,0 +1,448 @@
+object FunktionEditor: TFunktionEditor
+  Left = 368
+  Height = 253
+  Top = 187
+  Width = 431
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Funktionseditor'
+  ClientHeight = 253
+  ClientWidth = 431
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'System'
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '2.2.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 201
+    Top = 52
+    Width = 296
+    Align = alClient
+    ClientHeight = 201
+    ClientWidth = 296
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 2
+    object PanelLeft: TPanel
+      Left = 1
+      Height = 199
+      Top = 1
+      Width = 96
+      Align = alLeft
+      ClientHeight = 199
+      ClientWidth = 96
+      ParentBackground = False
+      TabOrder = 0
+      object ListBoxSysFkt: TListBox
+        Left = 7
+        Height = 81
+        Hint = 'Wählen Sie eine Funktion aus'
+        Top = 5
+        Width = 80
+        Items.Strings = (
+          'LN'
+          'EXP'
+          'SQRT'
+          ''
+        )
+        ItemHeight = 20
+        OnClick = ListBoxSysFktClick
+        TabOrder = 0
+      end
+      object ColorBox1: TColorBox
+        Left = 2
+        Height = 25
+        Top = 93
+        Width = 92
+        Style = [cbStandardColors, cbSystemColors]
+        ItemHeight = 16
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+      end
+    end
+    object PanelTasten: TPanel
+      Left = 103
+      Height = 199
+      Top = 1
+      Width = 192
+      Align = alRight
+      ClientHeight = 199
+      ClientWidth = 192
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'System'
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 1
+      object ButtonPlus: TButton
+        Left = 5
+        Height = 33
+        Top = 53
+        Width = 33
+        Caption = '+'
+        OnClick = ButtonZahlClick
+        TabOrder = 0
+      end
+      object ButtonMinus: TButton
+        Left = 37
+        Height = 33
+        Top = 53
+        Width = 33
+        Caption = '-'
+        OnClick = ButtonZahlClick
+        TabOrder = 1
+      end
+      object ButtonMal: TButton
+        Left = 5
+        Height = 33
+        Hint = 'mal'
+        Top = 85
+        Width = 33
+        Caption = '*'
+        OnClick = ButtonZahlClick
+        TabOrder = 2
+      end
+      object ButtonDurch: TButton
+        Left = 37
+        Height = 33
+        Hint = 'durch'
+        Top = 85
+        Width = 33
+        Caption = '/'
+        OnClick = ButtonZahlClick
+        TabOrder = 3
+      end
+      object ButtonHoch: TButton
+        Left = 5
+        Height = 33
+        Hint = 'hoch'
+        Top = 117
+        Width = 33
+        Caption = '^'
+        OnClick = ButtonZahlClick
+        TabOrder = 4
+      end
+      object Button7: TButton
+        Left = 90
+        Height = 33
+        Top = 53
+        Width = 32
+        Caption = '7'
+        OnClick = ButtonZahlClick
+        TabOrder = 5
+      end
+      object Button8: TButton
+        Left = 122
+        Height = 33
+        Top = 53
+        Width = 32
+        Caption = '8'
+        OnClick = ButtonZahlClick
+        TabOrder = 6
+      end
+      object Button9: TButton
+        Left = 154
+        Height = 33
+        Top = 53
+        Width = 32
+        Caption = '9'
+        OnClick = ButtonZahlClick
+        TabOrder = 7
+      end
+      object Button4: TButton
+        Left = 90
+        Height = 33
+        Top = 85
+        Width = 32
+        Caption = '4'
+        OnClick = ButtonZahlClick
+        TabOrder = 8
+      end
+      object Button5: TButton
+        Left = 122
+        Height = 33
+        Top = 85
+        Width = 32
+        Caption = '5'
+        OnClick = ButtonZahlClick
+        TabOrder = 9
+      end
+      object Button6: TButton
+        Left = 154
+        Height = 33
+        Top = 85
+        Width = 32
+        Caption = '6'
+        OnClick = ButtonZahlClick
+        TabOrder = 10
+      end
+      object Button1: TButton
+        Left = 90
+        Height = 33
+        Top = 117
+        Width = 32
+        Caption = '1'
+        OnClick = ButtonZahlClick
+        TabOrder = 11
+      end
+      object Button2: TButton
+        Left = 122
+        Height = 33
+        Top = 117
+        Width = 32
+        Caption = '2'
+        OnClick = ButtonZahlClick
+        TabOrder = 12
+      end
+      object Button3: TButton
+        Left = 154
+        Height = 33
+        Top = 117
+        Width = 32
+        Caption = '3'
+        OnClick = ButtonZahlClick
+        TabOrder = 13
+      end
+      object Buttonklzu: TButton
+        Left = 90
+        Height = 33
+        Top = 6
+        Width = 32
+        Caption = '('
+        OnClick = ButtonZahlClick
+        TabOrder = 14
+      end
+      object ButtonKlauf: TButton
+        Left = 122
+        Height = 33
+        Top = 6
+        Width = 32
+        Caption = ')'
+        OnClick = ButtonZahlClick
+        TabOrder = 15
+      end
+      object ButtonX: TButton
+        Left = 154
+        Height = 33
+        Hint = 'Variable n'
+        Top = 6
+        Width = 32
+        Caption = 'n'
+        OnClick = ButtonZahlClick
+        TabOrder = 16
+      end
+      object Button0: TButton
+        Left = 90
+        Height = 33
+        Top = 149
+        Width = 32
+        Caption = '0'
+        OnClick = ButtonZahlClick
+        TabOrder = 17
+      end
+      object Buttonkomma: TButton
+        Left = 122
+        Height = 33
+        Top = 149
+        Width = 32
+        Caption = ','
+        OnClick = ButtonZahlClick
+        TabOrder = 18
+      end
+      object ButtonDel: TButton
+        Left = 154
+        Height = 33
+        Top = 149
+        Width = 32
+        Caption = 'Entf'
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        OnClick = ButtonSpezialClick
+        ParentFont = False
+        TabOrder = 19
+      end
+      object ButtonDelBk: TButton
+        Tag = 1
+        Left = 43
+        Height = 33
+        Top = 149
+        Width = 41
+        Caption = 'DelBk'
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        OnClick = ButtonSpezialClick
+        ParentFont = False
+        TabOrder = 20
+      end
+    end
+  end
+  object PanelEingabe: TPanel
+    Left = 0
+    Height = 52
+    Top = 0
+    Width = 431
+    Align = alTop
+    ClientHeight = 52
+    ClientWidth = 431
+    ParentBackground = False
+    TabOrder = 0
+    object LabelFehler: TLabel
+      Left = 8
+      Height = 19
+      Top = 3
+      Width = 390
+      AutoSize = False
+      Color = clYellow
+      Transparent = False
+      Visible = False
+    end
+    object EditFormel: TEdit
+      Left = 8
+      Height = 29
+      Hint = 'Geben Sie einen mathm. Ausdruck ein'
+      Top = 22
+      Width = 390
+      AutoSelect = False
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      MaxLength = 255
+      OnChange = EditFormelChange
+      ParentFont = False
+      TabOrder = 0
+      Text = 'n'
+    end
+  end
+  object PanelRechts: TPanel
+    Left = 296
+    Height = 201
+    Top = 52
+    Width = 135
+    Align = alRight
+    ClientHeight = 201
+    ClientWidth = 135
+    ParentBackground = False
+    TabOrder = 1
+    object ButtonFehler: TButton
+      Left = 6
+      Height = 24
+      Hint = 'Fehlerart und -position anzeigen'
+      Top = 90
+      Width = 121
+      Caption = 'Fehler anzeigen'
+      Enabled = False
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = ButtonFehlerClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ButtonCurLeft: TButton
+      Tag = 2
+      Left = 6
+      Height = 25
+      Top = 28
+      Width = 41
+      Caption = '<---'
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = ButtonSpezialClick
+      ParentFont = False
+      TabOrder = 1
+    end
+    object ButtonCurRight: TButton
+      Tag = 3
+      Left = 78
+      Height = 25
+      Top = 28
+      Width = 41
+      Caption = '--->'
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      OnClick = ButtonSpezialClick
+      ParentFont = False
+      TabOrder = 2
+    end
+    object ButtonCurHome: TButton
+      Tag = 4
+      Left = 42
+      Height = 25
+      Top = 3
+      Width = 41
+      Caption = 'Pos 1'
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      OnClick = ButtonSpezialClick
+      ParentFont = False
+      ParentShowHint = False
+      TabOrder = 3
+    end
+    object ButtonCurEnde: TButton
+      Tag = 5
+      Left = 42
+      Height = 25
+      Top = 53
+      Width = 41
+      Caption = 'Ende'
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      OnClick = ButtonSpezialClick
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Panel2: TPanel
+      Left = 1
+      Height = 77
+      Top = 123
+      Width = 133
+      Align = alBottom
+      ClientHeight = 77
+      ClientWidth = 133
+      ParentBackground = False
+      TabOrder = 5
+      object BitBtnCancel: TBitBtn
+        Left = 6
+        Height = 25
+        Hint = 'Formel verwerfen'
+        Top = 46
+        Width = 122
+        Caption = 'Abbruch'
+        Kind = bkCancel
+        ModalResult = 2
+        TabOrder = 0
+      end
+      object BitBtnOk: TBitBtn
+        Left = 6
+        Height = 25
+        Hint = 'Übernehmen der Formel'
+        Top = 8
+        Width = 122
+        Caption = 'Ok'
+        Kind = bkOK
+        ModalResult = 1
+        TabOrder = 1
+      end
+    end
+  end
+end
