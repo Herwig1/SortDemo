@@ -161,7 +161,7 @@ const
     'Demo zu einigen Sortieralgorithmen',
     'Vergleich der Ausführungszeiten',
     'Bestimme Anzahl der Verschiebungen',
-    'Bestimme Anzahl der Vergleichen',
+    'Bestimme Anzahl der Vergleiche',
     'Bestimme die "Kosten"',
     'Beispiel einer Bandsortierung',
     'Zahlenfeld erzeugen',
